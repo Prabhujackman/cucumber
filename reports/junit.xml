@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="14.429" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-09-22T02:49:27.984Z">
+  <testcase classname="Purchase Samsung Galaxy S6" name="User purchases Samsung Galaxy S6 successfully" time="8.595">
+    <system-out><![CDATA[Given I navigate to the Demoblaze website...................................passed
+Then the page title should be "STORE".......................................passed
+When I login with username "Prabhu123" and password "Jackman"...............passed
+Then I should see the welcome message "Welcome Prabhu123"...................passed
+When I select the product "Samsung galaxy s6"...............................passed
+Then I should see the product details page for "Samsung galaxy s6"..........passed
+When I add the product to the cart..........................................passed
+And I proceed to checkout...................................................passed
+Then the "Place order" dialog should be displayed...........................passed
+When I enter the order details:.............................................passed
+And I confirm the purchase..................................................passed
+Then I should see the message "Thank you for your purchase!"................passed
+And I close the confirmation................................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Login to Demoblaze" name="Login with valid username and password" time="5.796">
+    <system-out><![CDATA[Given I navigate to the Demoblaze webapp....................................passed
+When I click on the login link..............................................passed
+And I enter username "Prabhu123"............................................passed
+And I enter password "Jackman"..............................................passed
+And I click on the login button.............................................passed
+Then I should see the logout link...........................................passed]]></system-out>
+  </testcase>
+</testsuite>
