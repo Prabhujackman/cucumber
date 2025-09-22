@@ -20,12 +20,13 @@ pipeline {
       }
     }
 
-    stage('Run cucumber-playwright tests') {
-      steps {
-        bat 'node -e "require(\\'fs\\').mkdirSync(\\'reports\\', { recursive: true })"'
-        bat 'npm run test:cucumber:junit'
-      }
-    }
+  stage('Run cucumber-playwright tests') {
+  steps {
+    bat 'if not exist reports mkdir reports'
+    bat 'npm run test:cucumber:junit'
+  }
+}
+
   }
 
   post {
