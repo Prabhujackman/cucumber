@@ -1,4 +1,4 @@
-should i paste the below content in local drive jenkins file ? : pipeline {
+pipeline {
   agent any
   tools {
     nodejs 'Node20'
