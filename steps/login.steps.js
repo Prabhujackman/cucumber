@@ -15,7 +15,7 @@ When('I enter username {string}', async function (username) {
   await this.page.locator('#loginusername').fill(username); 
   await this.page.fill('#loginusername', username);
   console.log("Entered username");
-  console.log("Entered username");
+
 });
 
 When('I enter password {string}', async function (password) {
