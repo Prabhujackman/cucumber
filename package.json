@@ -1,0 +1,19 @@
+{
+  "name": "bddcicd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx playwright install --with-deps",
+    "test:cucumber:junit": "cucumber-js features/**/*.feature --require ./support/world.js --require ./support/hooks.js --require ./steps/**/*.js -f junit:reports/junit.xml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "cucumber-junit-formatter": "^0.2.2"
+  }
+}
