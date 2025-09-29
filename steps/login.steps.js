@@ -32,4 +32,5 @@ Then('I should see the logout link', async function () {
   const logoutlink = this.page.locator("//a[@id='logout2']");
   await expect(logoutlink).toBeVisible();
   console.log("Logout link is visible");
+  console.log("User is logged into the application");
 });
