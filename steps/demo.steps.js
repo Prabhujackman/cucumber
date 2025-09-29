@@ -64,4 +64,5 @@ Then('I should see the message {string}', async function (message) {
 
 Then('I close the confirmation', async function () {
   await this.page.getByRole('button', { name: 'OK' }).click();
+  console.log("Confirmation popup is closed")
 });
